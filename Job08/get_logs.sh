@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 date_actuelle=$(date +"%d-%m-%Y-%H:%M")
 logfile="/var/log/auth.log"
@@ -10,4 +10,4 @@ nom_fichier="/home/thomas/Documents/shell-exe/Job08/number_connection-$date_actu
 
 echo "$nombre_connexions" > "$nom_fichier"
 tar -cvf /home/thomas/Documents/shell-exe/Job08/Backup/$fin_fichier.tar $nom_fichier
-sudo rm /home/thomas/Documents/shell-exe/Job08/$nom_fichier
+rm /home/thomas/Documents/shell-exe/Job08/$nom_fichier
